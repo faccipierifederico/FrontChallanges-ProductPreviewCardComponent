@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsla(32, 83%, 39%, 0.144);
+    font-family: 'Fraunces', serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container, .info-container{
+    height: 500px;
+    width: 340px;
+}
+
+.photo-container{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.photo-container img{
+    height: 500px;
+    width: 340px;
+    object-fit: fill;
+    display: flex;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+h4{
+    color: rgb(148, 148, 148);
+    font-family: 'Montserrat';
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.info-p{
+    color: rgb(148, 148, 148);
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.prices{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices-p-1{
+    font-size: 40px;
+    color: hsl(118, 79%, 21%);
+}
+
+.prices-p-2{
+    margin-right: 35px;
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+button{
+    display: flex;
+    padding: 15px 83px;
+    background-color: hsl(118, 79%, 21%);
+    border-radius: 10px;
+    color: antiquewhite;
+    border: none;
+    font-family: 'Fraunces';
+    font-weight: 100;
+}
+
+button svg{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+    .photo-container{
+        height: 300px;
+    }
+
+    .photo-container img{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .info-container{
+        border-radius: 0px 00px 20px 20px;
+
+    }
+}
